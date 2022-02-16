@@ -1,0 +1,35 @@
+﻿using System;
+
+namespace _16._02
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] Arr = { "SalaM ne var ne Yox" };
+            Case();
+        }
+        public static void Case()
+        {
+            string[] Arr = { "SalaM ne var ne Yox" };
+            foreach (string words in Arr)
+            {
+                foreach (char letter in words)
+                {
+                    if (char.IsUpper(letter)) 
+                    {
+                        Console.Write(char.ToLower(letter));
+                    }
+                    else
+                    {
+                        Console.Write(char.ToUpper(letter));
+                    }
+                }
+             
+            }
+           
+           
+           
+        }
+    }
+}
